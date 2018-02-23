@@ -4,7 +4,26 @@
  * Write a function maxOfArray() that takes an array of
  * numbers as an argument and finds the highest number.
  *
+crear una function que acepte una array de numero 
+recorrer un array 
+saber cual es el numero mas alto de ese array
+
 **/
+
+
+function maxOfArray (number){
+  let hijo = 0
+  for (let i = 0; i < number.length; i++){
+    if ( hijo < number[i]) {
+      hijo = number[i]
+      
+    }
+  }
+  return hijo
+}
+
+
+
 
 
 console.group('JS Iterations Week');

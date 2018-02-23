@@ -5,6 +5,19 @@
  *  only adds the positive numbers
  *
 */
+function sumPositives(cadena){
+  let sumar = 0
+  for(let i = 0; i < cadena.length; i++ ){
+      if (cadena[i] >= 0) {
+        console.log(cadena[i])
+        sumar += cadena[i]
+      }
+
+  }
+
+  return sumar
+}
+
 
 console.group('JS Iterations Week');
   console.log('%cFunction: sumPositives', 'background-color: green; color: white')

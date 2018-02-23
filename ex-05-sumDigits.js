@@ -9,7 +9,38 @@
  *    sumDigits(12) => 3
  *    sumDigits(1112) => 5
  *    sumDigits(406) => 10
+ crear una function  que acente un conjunto de valores 
+ separa ese conjunto en un arrar
+ sumar cada uno de los valores del array 
+
+
+
  **/
+
+
+function sumDigits (parametros) {
+ let letras = parametros.toString();
+ let letrasArray = letras.split("")
+  //console.log(letrasArray)
+  let suma = 0
+  let resultado = 0
+
+  for(let i = 0; i < letrasArray.length; i++ ){
+   //console.log(letrasArray[i])
+
+  suma = parseInt(letrasArray[i])
+  resultado += suma
+  
+    
+  }
+  return resultado
+  
+}
+
+
+
+
+
 
 console.group('JS Iterations Week');
   console.log('%cFunction: sumDigits', 'background-color: green; color: white')

@@ -17,12 +17,36 @@
  *      => false // the double-letters have to be next to eachother
 **/
 
+//saber si hay letras iguales en el string
+//obtener cada elemento de 
+
+
+function hasDoubleLetters(params){
+  let doble = false
+  let mayusculas = params.toUpperCase()
+    for (let i = 0; i < mayusculas.length; i ++){
+      if (mayusculas[i] === mayusculas[i+1]) {
+        doble = true 
+      }
+    }
+    return doble
+}
+
+
+
+
+
+
+
+
+
+
+
 console.group('JS Iterations Week');
   console.log('Function: hasDoubleLetters', 'background-color: green; color: white')
   console.groupCollapsed('Should return true for "shutter"');
     console.assert(hasDoubleLetters('stutter') === true)
   console.groupEnd();
-
   console.groupCollapsed('Should return false for "prospect"');
     console.assert(hasDoubleLetters('prospect') === false)
   console.groupEnd();
